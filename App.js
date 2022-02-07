@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, PlatformColor, Platform, StatusBa
 import CrrentPrice from './src/components/CurrentPrice';
 import HistoryGraphic from './src/components/HistoryGraphic';
 import QuatationsList from './src/components/QuotationsList';
+import QuatationsItens from './src/components/QuotationsList/QuatationsItens';
 
 export default function App() {
   return (
@@ -11,9 +12,10 @@ export default function App() {
       backgroundColor='#f50d41'
       barStyle="dark-content"
       />
-      <CrrentPrice></CrrentPrice>
-      <HistoryGraphic></HistoryGraphic>
-      <QuatationsList></QuatationsList>
+      <CrrentPrice/>
+      <HistoryGraphic/>
+      <QuatationsList/>
+      <QuatationsItens/>
     </SafeAreaView>
   );
 }
