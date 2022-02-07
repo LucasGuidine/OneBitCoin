@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, SafeAreaView, PlatformColor, Platform, StatusBa
 import CrrentPrice from './src/components/CurrentPrice';
 import HistoryGraphic from './src/components/HistoryGraphic';
 import QuatationsList from './src/components/QuotationsList';
-import QuatationsItens from './src/components/QuotationsList/QuatationsItens';
 
 function addZero(number){
   if(number<=9){
@@ -80,7 +79,7 @@ export default function App() {
       barStyle="dark-content"
       />
       <CrrentPrice/>
-      <HistoryGraphic/>
+      <HistoryGraphic infoDataGraphic={coinGraphicList}/>
       <QuatationsList filterDay={updateDays} listTransactions={coinsList}/>
     </SafeAreaView>
   );
