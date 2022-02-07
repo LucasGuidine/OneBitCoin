@@ -11,7 +11,7 @@ export default function QuatationsItens(){
           style={styles.logBitcoin}
           source={require("../../../img/5168.png")}
           />
-          <Text style={styles.dayCotation}> 07/05/2021</Text>
+          <Text style={styles.dayCotation}> 07/02/2022</Text>
         </View>
       </View>
       <View style={styles.contextRigth}>
