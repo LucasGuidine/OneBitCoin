@@ -27,7 +27,7 @@ async function getListCoins(url){
   let response = await fetch(url);
   let returnApi = await response.json();
   let selectListQuotations = returnApi.bpi;
-  const queryCoinsList = Object.keys(selectListQuotations).map((keys)=>{
+  const queryCoinsList = Object.keys(selectListQuotations).map((key)=>{
     return{
       data: key.split("-").reverse().join("/"),
       valor: selectListQuotations[key]
@@ -52,7 +52,7 @@ export default function App() {
 
   const [coinsList, setCoinsList] = useState([])
   const [coinGraphicList, setCoinsGraphicList] = useState([0])
-  const [days, setDays] = useState(30)
+  const [days, setDays] = useState(1)
   const [updateData, setUpdateData] = useState(true)
 
   function updateDays(number){
@@ -81,8 +81,7 @@ export default function App() {
       />
       <CrrentPrice/>
       <HistoryGraphic/>
-      <QuatationsList/>
-      <QuatationsItens/>
+      <QuatationsList filterDay={updateDays} listTransactions={coinsList}/>
     </SafeAreaView>
   );
 }

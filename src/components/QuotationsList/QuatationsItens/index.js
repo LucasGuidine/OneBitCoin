@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 import styles from "./style"
 
-export default function QuatationsItens(){
+export default function QuatationsItens(props){
     return(
         <View style={styles.mainContent}>
       <View style={styles.contextLeft}>
@@ -11,11 +11,11 @@ export default function QuatationsItens(){
           style={styles.logBitcoin}
           source={require("../../../img/5168.png")}
           />
-          <Text style={styles.dayCotation}> 07/02/2022</Text>
+          <Text style={styles.dayCotation}> {props.data}</Text>
         </View>
       </View>
       <View style={styles.contextRigth}>
-        <Text style={styles.price}>$ 53331.052</Text>
+        <Text style={styles.price}>$ {props.valor}</Text>
       </View>
     </View>
     )
