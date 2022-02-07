@@ -9,7 +9,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       
       <StatusBar
-      backgroundColor='#f50d41'
+      backgroundColor='rgb(13, 127, 13)'
       barStyle="dark-content"
       />
       <CrrentPrice/>

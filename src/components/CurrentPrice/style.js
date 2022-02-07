@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         marginBottom:20,
     },
     currentPrice: {
-        color: "#f50d41",
+        color: 'rgb(13, 127, 13)',
         fontSize:32,
         fontWeight: "bold",
         paddingTop:20,
